@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/webpage.js"></script>
+
+<style>
+
+.ty
+{font-size:20px;font-family:Arial Rounded MT;color:dodgerblue;}
+li:hover
+{font-size:20px;font-family:Arial Rounded MT;color:lightgreen;}
+.mySlides {display:none;}
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: grey;
+  background: AliceBlue;
+}
+
+.container {
+ max-width: 500px;
+  width: 100%;
+  margin: 0 auto; 
+  position: relative;
+}
+
+
+#contact {
+  background: white;
+  padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
+
+#contact h3 {
+  
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="Address"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid grey;
+  background:white;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"],
+#contact button[type="reset"]{
+ 
+  width: 100%;
+  border: none;
+  background: Salmon;
+  color: white;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+</style>
+
+<script type="text/javascript">
+function fun()
+{
+alert("welcome to web page");
+}
+</script>
+
+</head>
+<body>
+<section class="container">  
+  <form id="contact">
+
+    <h3>page</h3>
+    <fieldset>
+     
+      <p>
+    <label>Title</label>
+    <label>
+      <input type="radio" name="title" value="mr">
+      Mr
+    </label>
+    <label>
+      <input type="radio" name="title" value="mrs">
+      Mrs
+    </label>
+    <label>
+      <input type="radio" name="title" value="miss">
+      Miss
+    </label>
+     <input placeholder="Your name" type="text" required >
+  </p>
+
+<p>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email"  required>
+      </p>
+    </fieldset>
+    <p>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" required>
+    </fieldset>
+    </p>
+     <fieldset>
+     <p>
+      <input placeholder=" Address" type="Address"  required>
+    </fieldset>
+    </p>
+    <p>
+    <label for="pwd">Password:</label>
+
+    <input type="password" id="pwd" name="pwd">
+    </p>
+
+     	
+    <p>
+    <fieldset>	
+      <button name="submit" onclick=fun() type="submit" id="contact-submit">Submit</button>
+       
+      
+    </fieldset>
+     <fieldset>
+    	
+      <button name="reset" type="reset" id="contact-submit">Reset</button>
+    </fieldset>
+  </form>
+</section>
+</p>
+<br/> <br/><br/>
+   Your data will display below..... <br />
+   ==============================<br />
+   <div id="results">
+   <!-- All data will display here  -->
+   </div>
+
+</body> 
